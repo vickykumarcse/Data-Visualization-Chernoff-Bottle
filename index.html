@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chernoff Wine Bottle</title>
+    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="/">Chernoff Wine Bottle</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class='control-panel'>
+        <h4 class="text-center">Chernoff Bottle</h4>
+        <div class="form-row attributes">
+            <div class="col-md-3">
+                <label>Bottle Size</label>
+                <select id="bottle-size" class="form-control">
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label>Bottle Color</label>
+                <select id="bottle-color" class="form-control">
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label>Fullness of a Bottle</label>
+                <select id="bottle-fullness" class="form-control">
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label>Bottle Cap Position</label>
+                <select id="bottle-cap-position" class="form-control">
+                </select>
+            </div>
+        </div>
+        <div class="form-row sort-panel">
+            <div class="col-md-3">
+                <label>Sort By</label>
+                <select id="sort-by" class="form-control">
+                    <option value=''> Select</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label>Order By</label>
+                <select id="order-by" class="form-control">
+                    <option value="">Select</option>
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="chernoff-map">
+        <div class="chernoff-face">
+            <svg class="map"></svg>
+            <div class="zoom-controls">
+                <img class="zoom-in" src="./assets/img/zoom-in.png">
+                <img class="zoom-out" src="./assets/img/zoom-out.png">
+                <img class="reset" src="./assets/img/reset.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+    </footer>
+    <!-- Scripts-->
+    <script src="./scripts/d3/d3.v5.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
